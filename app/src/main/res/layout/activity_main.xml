@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFBB86FC"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <!-- Text View to display our basic heading of "calculator"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Calculator"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
+
+    <!-- Edit Text View to input the values -->
+
+    <!-- Edit Text View to input 2nd value-->
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Number1"
+        android:inputType="number"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="number2"
+        android:inputType="number"
+        android:layout_marginBottom="25dp"
+        />
+
+    <!-- Text View to display result -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="result"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <!-- A button to perform 'sum' operation -->
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doSum"
+        android:text="+"
+        />
+
+    <!-- A button to perform subtraction operation. -->
+
+    <!-- A button to perform division. -->
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doSub"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doDiv"
+        android:text="/"
+        />
+
+    <!-- A button to perform multiplication. -->
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doMul"
+        android:text="x"
+        />
+
+    <!-- A button to perform a modulus function. -->
+
+    <!-- A button to perform a power function. -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doMod"
+        android:text="%(mod)"
+        />
+
+    <Button
+        android:id="@+id/pow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doPow"
+        android:text="n1^n2"
+        />
+
+</LinearLayout>
